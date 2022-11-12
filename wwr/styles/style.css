@@ -87,7 +87,7 @@ header {
 footer {
     background-color: #506858;
     padding: 25px 50px;
-    margin-top: 200px;
+    margin-top: 50px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -189,7 +189,49 @@ nav {
     grid-row: 5/8;
     box-shadow: 5px 5px 10px #6f7364;
 }
-
+.rivers-grid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    margin: 50px;
+}
+.river1 {
+    grid-column-start: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.river2 {
+    grid-column-start: 6;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.river3 {
+    grid-column-start: 9;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.river1 .river2 .river3 {
+    width: 100%;
+    margin: 200px 0;
+}
+.river-img {
+    border: 10px solid #28567B;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #28567B;
+    border-radius: 50%;
+}
+.river-img:hover {
+    opacity: .6;
+    transform: scale(1.1);
+}
+.river1 p, .river2 p, .river3 p {
+    color: white;
+    background-color: #506858;
+    line-height: 2em;
+    padding: 35px;
+    grid-column: 6/10;
+    grid-row: 6/7;
+    box-shadow: 5px 5px 10px #506858;
+}
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
         display: block;
