@@ -258,9 +258,7 @@ label {
     width: 90px;
     text-align: right;
 }
-  
-input,
-textarea {
+input, textarea {
     /* To make sure that all text fields have the same font settings
        By default, textareas have a monospace font */
     font: 1em sans-serif;
@@ -273,8 +271,7 @@ textarea {
     border: 1px solid #999;
 }
   
-input:focus,
-textarea:focus {
+input:focus, textarea:focus {
     /* Additional highlight for focused elements */
     border-color: #000;
 }
