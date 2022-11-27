@@ -1,12 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&family=Indie+Flower&family=Merriweather:ital,wght@1,300&family=Roboto+Slab:wght@300&display=swap');
 
 #content {
-    max-width: 1600px;
+    max-width: 2000px;
     margin: 0 auto;
 }
 .home-grid {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
 }
 nav {
     display: flex;
@@ -14,16 +15,18 @@ nav {
 }
 nav a {
     text-decoration: none;
-    color: white;
+    color: #f0e7e9;
     text-align: center;
-    padding: 35px;
+    padding: 65px;
+    font-size: 23px;
 }
 nav a:hover {
-    background-color: white;
+    background-color: #f0e7e9;
     color: black;
 }
 .logo {
-    width: 80px;
+    width: 150px;
+    padding-left: 100px;
 }
 #logo_link {
     padding-top: 5px;
@@ -31,33 +34,107 @@ nav a:hover {
     align-self: center;
 }
 .home-title {
-    color: white;
-    font-family: Handlee, Helvetica, sans-serif;
+    color: #303434;
+    font-family: "Fuzzy Bubbles", "Indie Flower", sans-serif;
     font-size: 2em;
     margin-top: 10px;
+    text-align: center;
 }
-h4 {
-    color: white;
+.home-hero {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    margin-top: -50px;
+    font-family: "Fuzzy Bubbles", "Indie Flower", sans-serif;
+    text-align: center;
 }
-#home-hero h1, #home-hero h4 {
+.hero-box {
+    grid-column: 1/4;
+    grid-row: 1/3;
+    z-index: -1;
+}
+.home-hero-msg {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 100px;
+    font-family: "Fuzzy Bubbles", "Indie Flower", sans-serif;
+    text-align: center;
+    background-color: #dca4ac;
+}
+.hero-msg h1, .hero-msg h4 {
     text-align: center;
 }
 body {
-    background-color: white;
-    font-family: handlee, Helvetica, sans-serif;
+    background-color: #f0e7e9;
+    font-family: "Merriweather", "Roboto Slab", sans-serif;
     font-size: 22px;
     margin: 0;
     padding: 0;
 }
 header {
-    background-color: #28567B;
-    font-family: handlee, helvetica, sans-serif;
+    background-color: #cb5464;
+    font-family: "Fuzzy Bubbles", "Indie Flower", sans-serif;
     display: grid;
     grid-template-columns: 150px auto;
 
 }
+.index-grid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    margin: 10px;
+}
+p {
+    font-family: "Fuzzy Bubbles", "Indie Flower", sans-serif;
+}
+.fact1 {
+    grid-column-start: 1.5;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.fact2 {
+    grid-column-start: 3.5;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.fact3 {
+    grid-column-start: 5.5;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.fact4 {
+    grid-column-start: 7.5;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.fact1 .fact2 .fact3 .fact4 {
+    width: 100%;
+    margin: 200px 0;
+}
+.fact-img {
+    width: 300px;
+    height: 250px;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #cb5464 ;
+    border-radius: 50%;
+}
+.fact-img:hover {
+    opacity: .6;
+    transform: scale(1.1);
+}
+.fact1 p, .fact2 p, .fact3 p, .fact4 p{
+    color: #f0e7e9;
+    background-color: #303434;
+    line-height: 2em;
+    padding: 35px;
+    grid-column: 6/10;
+    grid-row: 6/7;
+    box-shadow: 5px 5px 10px #303434;
+}
 footer {
-    background-color: #506858;
+    background-color: #86474f;
     padding: 25px 50px;
     margin-top: 50px;
     display: flex;
@@ -66,16 +143,16 @@ footer {
 }
 footer p {
     font-size: 1.2em;
-    color: white;
+    color: #f0e7e9;
 }
 footer p a:hover {
     text-decoration: underline;
 }
 footer h3 {
-    color: white;
+    color: #f0e7e9;
 }
 footer a {
-    color: white;
+    color: #f0e7e9;
     text-decoration: none;
 }
 footer a:hover {
