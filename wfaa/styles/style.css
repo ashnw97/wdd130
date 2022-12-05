@@ -36,6 +36,7 @@
     grid-column: 2/3;
     grid-row: 1/2;
     margin-top: 100px;
+    margin-bottom: 100px;
     font-family: "Fuzzy Bubbles", "Indie Flower", sans-serif;
     text-align: center;
     background-color: #dca4ac;
@@ -98,7 +99,6 @@ p {
     height: 250px;
     transition: transform .5s;
     box-shadow: 5px 5px 10px #cb5464 ;
-    border-radius: 50%;
 }
 .fact-img:hover {
     opacity: .6;
@@ -189,6 +189,7 @@ footer a:hover {
     grid-column: 2/3;
     grid-row: 1/2;
     margin-top: 100px;
+    margin-bottom: 100px;
     font-family: "Fuzzy Bubbles", "Indie Flower", sans-serif;
     text-align: center;
     background-color: #dca4ac;
@@ -200,7 +201,7 @@ footer a:hover {
 #single {
     grid-row-start: 1;
     grid-row-end: 2;
-    margin-left: 250px;
+    margin-left: 400px;
 }
 #multi {
     grid-column-start: 4;
@@ -220,11 +221,10 @@ p {
     margin-top: 25px;
 }
 .single-app-img, .multi-app-img, .donate-img {
-    width: 400px;
-    height: 400px;
+    width: 350px;
+    height: 350px;
     transition: transform .5s;
     box-shadow: 5px 5px 10px #cb5464 ;
-    border-radius: 50%;
     margin-top: 50px;
 }
 .single-app-img:hover, .multi-app-img:hover, .donate-img:hover {
@@ -254,4 +254,70 @@ p {
 .book:hover, .join:hover {
     background-color: white;
     color: black;
+}
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    margin: 10px;
+}
+.contact-hero {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    margin-top: -50px;
+    font-family: "Fuzzy Bubbles", "Indie Flower", sans-serif;
+    text-align: center; 
+}
+#contact-hero-msg {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 100px;
+    font-family: "Fuzzy Bubbles", "Indie Flower", sans-serif;
+    text-align: center;
+    background-color: #dca4ac;
+}
+.contact-img {
+    float: left;
+    max-width: 100%;
+    margin-left: 150px;
+    margin-top: 100px;
+    height: 350px;
+    width: 400px;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #cb5464 ;
+}
+.contact-img:hover {
+    opacity: .6;
+    transform: scale(1.1);
+}
+#email {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    display: flex;
+}
+#telephone {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    display: flex;
+}
+#socials {
+    grid-row-start: 5;
+    grid-row-end: 6;
+    display: flex;
+}
+#email li, #telephone li, #socials li {
+    display: flex;
+    text-align: left;
+    float: right;
+    margin-top: 25px;
+    margin-left: 150px;
+    font-size: 30px;
+}
+#socials ul {
+    margin-top: 45px;
+}
+#email ul {
+    margin-top: 135px;
+}
+#telephone ul {
+    margin-top: 85px;
 }
