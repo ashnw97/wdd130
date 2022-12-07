@@ -201,20 +201,21 @@ footer a:hover {
 #single {
     grid-row-start: 1;
     grid-row-end: 2;
-    margin-left: 400px;
+    margin-left: 250px;
 }
 #multi {
     grid-column-start: 4;
     grid-column-end: 5;
     grid-row-start: 1;
     grid-row-end: 2;
-    margin-right: 250px;
+    margin-right: 200px;
 }
 #donate {
     grid-column-start: 3;
     grid-row-start: 2;
     grid-row-end: 3;
     margin-top: 75px;
+    margin-right: 100px;
 }
 p {
     font-family: "Fuzzy Bubbles", "Indie Flower", sans-serif;
